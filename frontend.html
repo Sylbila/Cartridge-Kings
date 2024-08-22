@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartridge Kings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body class="font-sans">
+    <header>
+      <div class="bg-gray-200 flex justify-between py-4 px-28 text-sm">
+        <div>
+          <a href="#" class="mr-4">Franchise Opportunities</a>
+          <a href="#" class="mr-4">Help</a>
+          <a href="#">Feedback</a>
+        </div>
+        <div>
+          <a href="mailto:hello@email.com" class="mr-4">hello@email.com</a>
+          <span>0800 822 2222</span>
+        </div>
+      </div>
+      <div
+        class="bg-white text-black flex justify-between items-center py-4 px-28"
+      >
+        <h1 class="text-2xl font-bold">CARTRIDGE KINGS</h1>
+        <div class="flex items-center">
+          <input
+            type="search"
+            placeholder="Search"
+            class="p-2 mr-2 border-2 border-black text-black"
+          />
+          <button class="bg-orange-500 text-white p-2">Cart (1)</button>
+        </div>
+      </div>
+      <div class="px-28">
+        <nav
+          class="bg-blue-600 text-white flex justify-center items-center py-4"
+        >
+          <a href="#" class="px-8 hover:bg-blue-700">Home</a>
+          <a href="#" class="px-8 hover:bg-blue-700">Ink Cartridges</a>
+          <a href="#" class="px-8 hover:bg-blue-700">Toner Cartridges</a>
+          <a href="#" class="px-8 hover:bg-blue-700">Contact Us</a>
+          <a href="#" class="px-8 hover:bg-blue-700">Login / Register</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="text-center bg-cover bg-center py-16"
+        style="
+          background-image: url('https://i.pinimg.com/564x/72/5d/fa/725dfa8bda505d3b991ac57b0f014d87.jpg');
+        "
+      >
+        <h2 class="text-3xl mb-8 text-white">
+          FIND THE RIGHT CARTRIDGES FOR YOUR PRINTER
+        </h2>
+        <div class="flex justify-center">
+          <select id="printer-brand" class="p-3 mx-2">
+            <option>1. Printer Brand</option>
+            <option>Lorem ipsum</option>
+            <option>Lorem ipsum</option>
+            <!-- Add printer brands here -->
+          </select>
+          <select id="printer-brand" class="p-3 mx-2">
+            <option>2. Printer Series</option>
+            <option>Lorem ipsum</option>
+            <option>Lorem ipsum</option>
+            <!-- Add printer series here -->
+          </select>
+          <select id="printer-brand" class="p-3 mx-2">
+            <option>3. Printer Model</option>
+            <option>Lorem ipsum</option>
+            <option>Lorem ipsum</option>
+            <!-- Add printer models here -->
+          </select>
+          <button class="bg-orange-500 text-white p-3 mx-2">
+            Find Cartridges
+          </button>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <h3 class="text-2xl text-center mb-8">Featured Products</h3>
+        <div class="flex justify-center space-x-8">
+          <div class="border p-4 w-48 text-center">
+            <img
+              src="asset/img2.png"
+              alt="HP 62 Black Ink Cartridge"
+              class="mx-auto mb-4"
+            />
+            <p>HP 62 Black Ink Cartridge</p>
+            <p class="mt-2">$9.49</p>
+            <button class="bg-orange-500 text-white p-2 mt-4">
+              Add to Cart
+            </button>
+          </div>
+          <div class="border p-4 w-48 text-center">
+            <img
+              src="asset/img3.png"
+              alt="Canon MF-3110 Toner"
+              class="mx-auto mb-4"
+            />
+            <p>Canon MF-3110 Toner</p>
+            <p class="mt-2">$36.45</p>
+            <button class="bg-orange-500 text-white p-2 mt-12">
+              Add to Cart
+            </button>
+          </div>
+          <div class="border p-4 w-48 text-center">
+            <img
+              src="asset/img4.png"
+              alt="HP 62 Black Ink Cartridge"
+              class="mx-auto mb-4"
+            />
+            <p>HP 62 Black Ink Cartridge</p>
+            <p class="mt-2"><s>$9.49</s> $5.99</p>
+            <button class="bg-orange-500 text-white p-2 mt-4">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document
+        .getElementById("printer-brand")
+        .addEventListener("change", function () {
+          // Code to update printer series and models
+          console.log("Printer brand changed");
+        });
+    </script>
+  </body>
+</html>
